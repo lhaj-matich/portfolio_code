@@ -1,0 +1,253 @@
+/// LAYOUT
+
+.container {
+  display: block;
+
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #fff;
+  position: relative;
+}
+
+@media only screen and (max-width: $bp-large) {
+  .container {
+    margin: 0rem;
+    border-radius: 0;
+  }
+}
+
+/// SECTIONS
+
+//> ABOUT ME
+
+.aboutMe {
+  margin-top: -5rem;
+  padding-bottom: 0rem;
+  background-color: #fff;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 0;
+  }
+
+  &__text {
+    display: inline-block;
+    margin: 0 4rem;
+    padding: 1.5rem 3rem 2rem 3rem;
+    font-size: 2.2rem;
+    color: #777;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    border-bottom: 1px solid #ddd;
+    @media only screen and (max-width: $bp-small) {
+      text-align: justify;
+    }
+  }
+
+  &__social {
+    padding: 4rem 3rem;
+    text-align: center;
+  }
+
+  &__icons {
+    display: block;
+  }
+
+  &__skills {
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+//> RESUMEE
+
+.resumeSection {
+  display: block;
+  padding: 2rem 0rem;
+  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(to left, #f2965938, #1f1a38),
+    url(/images/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  @media only screen and (max-width: $bp-small) {
+    background-attachment: initial;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    background-attachment: initial;
+  }
+}
+
+//> RECENT WORK
+
+.recentWork {
+  border-bottom: 1px solid #ddd;
+  background-color: #f1f1f1;
+  padding: 2rem;
+  &__projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+//> CONTACT
+
+.contact {
+  height: 42rem;
+  display: flex;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    height: auto;
+  }
+  &__left {
+    height: 100%;
+    width: 60%;
+    background-image: linear-gradient(to left, #f2965938, #1f1a38),
+      url(/images/background2.jpg);
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 4rem 0;
+    }
+  }
+
+  &__right {
+    height: 100%;
+    width: 40%;
+    border-left: 2px solid #f29559;
+    background-color: #222;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      border-left: none;
+      border-top: 2px solid $color-primary;
+    }
+  }
+
+  &__heading {
+    font-size: 4rem;
+    line-height: 1;
+    margin: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  &__btn {
+    border-radius: 0.5rem;
+    display: block;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    padding: 0.5rem 4rem;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
+  }
+
+  &__btn:focus {
+    outline: none;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+    background-color: #f29559;
+  }
+}
+
+//> FOOTER
+
+.footer {
+  display: block;
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem 0;
+  }
+
+  &__img {
+    border-radius: 10rem;
+    display: block;
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem auto;
+  }
+
+  &__heading {
+    letter-spacing: 2px;
+    padding: 4px;
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ddd;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__heading--secondary {
+    padding: 4px;
+    font-size: 1.4rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ddd;
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__icon {
+    font-size: 2.6rem;
+    margin: 1rem;
+    color: #ddd;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 3.2rem;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__copyright {
+    padding: 4px;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    color: #ddd;
+    text-align: center;
+  }
+}

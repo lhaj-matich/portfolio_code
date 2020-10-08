@@ -1,0 +1,94 @@
+.heading__primary--main {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  border-right: 2px solid #fff;
+  animation: typing 4s steps(70, end), blink-caret 0.8s step-end infinite;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 3px;
+    font-size: 3.8rem;
+    white-space: normal;
+    border: none;
+    animation: showUp 3s;
+  }
+}
+
+.heading__primary--sub {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  color: #fff;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.7rem;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    white-space: normal;
+    border: none;
+    animation: showUpFromBottom 2s;
+  }
+}
+
+.heading__secondary {
+  background-image: linear-gradient(to right, #f29559, #1f1a38bb);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 4.6rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 4px;
+  margin: 0;
+
+  &--white {
+    text-align: center;
+    font-size: 4.6rem;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 4px;
+    margin: 1rem;
+    color: #fff;
+  }
+}
+
+.heading__tertiary {
+  background-image: linear-gradient(to right, #f29559, #1f1a38bb);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 4px;
+  margin-top: 2rem;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  &--white {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 0 2rem;
+  }
+}

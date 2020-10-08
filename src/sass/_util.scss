@@ -1,0 +1,33 @@
+.text-center {
+  text-align: center;
+}
+
+.margin-big {
+  margin: 8rem;
+  &-top {
+    margin: 8rem;
+  }
+  &-bottom {
+    margin: 8rem;
+  }
+}
+
+.margin-medium {
+  margin: 4rem;
+  &-top {
+    margin: 4rem;
+  }
+  &-bottom {
+    margin: 4rem;
+  }
+}
+
+.margin-small {
+  margin: 2rem;
+  &-top {
+    margin: 2rem;
+  }
+  &-bottom {
+    margin: 2rem;
+  }
+}

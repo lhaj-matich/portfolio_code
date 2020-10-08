@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap");
+
+// COLORS
+
+$color-primary: #f29559;
+$color-secondary: #e55381;
+$color-tertiary: #1f1a38;
+$color-success: #19a974;
+$color-error: #ff4136;
+
+// BREAKPOINTS
+
+$bp-base: 450px;
+$bp-small: 600px;
+$bp-medium: 700px;
+$bp-large: 900px;
+$bp-huge: 1400px;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    scroll-behavior: initial;
+  }
+}
+
+body {
+  background-image: linear-gradient(to right, $color-primary, $color-secondary);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 4rem;
+  @media only screen and (max-width: $bp-large) {
+    padding: 0;
+  }
+  @media only screen and (max-width: $bp-small) {
+    background-image: none;
+    background-color: #fff;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
